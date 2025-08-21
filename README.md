@@ -62,29 +62,29 @@
 
 스크립트 실행 후 아래와 같은 구조로 결과가 생성됩니다.
 
-IR
-|-- Artifacts
-|   |-- system_info.txt
-|   |-- installed_hotfix.txt
-|   |-- process_list.csv
-|   |-- service_list.csv
-|   |-- netstat.txt
-|   |-- net_tcp.csv
-|   |-- net_udp.csv
-|   |-- local_users.csv
-|   |-- security_log_recent.csv
-|   |-- registry_run.txt
-|   `-- scheduled_tasks_raw.csv
-|
-`-- IncidentResponse_Output_YYYYMMDD_HHMMSS
-    |-- analysis.log
-    |-- process_findings.csv
-    |-- net_findings.csv
-    |-- persistence_findings.csv
-    |-- file_hashes.csv
-    |-- ioc_hits.csv
-    |-- event_findings.csv
-    `-- summary.csv
+IR/
+├── Artifacts/
+│   ├── system_info.txt
+│   ├── installed_hotfix.txt
+│   ├── process_list.csv
+│   ├── service_list.csv
+│   ├── netstat.txt
+│   ├── net_tcp.csv
+│   ├── net_udp.csv
+│   ├── local_users.csv
+│   ├── security_log_recent.csv
+│   ├── registry_run.txt
+│   └── scheduled_tasks_raw.csv
+│
+└── IncidentResponse_Output_YYYYMMDD_HHMMSS/
+    ├── analysis.log
+    ├── process_findings.csv
+    ├── net_findings.csv
+    ├── persistence_findings.csv
+    ├── file_hashes.csv
+    ├── ioc_hits.csv
+    ├── event_findings.csv
+    └── summary.csv
 
 ---
 ## 🚀 사용 방법
