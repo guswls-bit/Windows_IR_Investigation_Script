@@ -62,4 +62,38 @@
 
 스크립트 실행 후 아래와 같은 구조로 결과가 생성됩니다.
 
+IR/
+├── Artifacts/ # 원본 수집 데이터
+│ ├── system\_info.txt
+│ ├── installed\_hotfix.txt
+│ ├── process\_list.csv
+│ ├── service\_list.csv
+│ ├── netstat.txt
+│ ├── net\_tcp.csv
+│ ├── net\_udp.csv
+│ ├── local\_users.csv
+│ ├── security\_log\_recent.csv
+│ ├── registry\_run.txt
+│ └── scheduled\_tasks\_raw.csv
+│
+└── IncidentResponse\_Output\_YYYYMMDD\_HHMMSS/ # 분석 결과
+├── analysis.log
+├── process\_findings.csv
+├── net\_findings.csv
+├── persistence\_findings.csv
+├── file\_hashes.csv
+├── ioc\_hits.csv
+├── event\_findings.csv
+└── summary.csv
 
+---
+
+## 🚀 사용 방법
+
+1. **PowerShell을 관리자 권한**으로 실행합니다.  
+2. 스크립트를 실행합니다.
+   ```powershell
+   .\script.ps1
+3. 모든 아티팩트와 분석 결과는 아래 경로에 저장됩니다.
+    IR\Artifacts\
+    IR\IncidentResponse_Output_<타임스탬프>\
