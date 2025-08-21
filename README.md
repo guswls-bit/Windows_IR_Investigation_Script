@@ -63,31 +63,30 @@
 스크립트 실행 후 아래와 같은 구조로 결과가 생성됩니다.
 
 IR/
-├── Artifacts/ # 원본 수집 데이터
-│ ├── system\_info.txt
-│ ├── installed\_hotfix.txt
-│ ├── process\_list.csv
-│ ├── service\_list.csv
-│ ├── netstat.txt
-│ ├── net\_tcp.csv
-│ ├── net\_udp.csv
-│ ├── local\_users.csv
-│ ├── security\_log\_recent.csv
-│ ├── registry\_run.txt
-│ └── scheduled\_tasks\_raw.csv
+├── Artifacts/
+│   ├── system_info.txt
+│   ├── installed_hotfix.txt
+│   ├── process_list.csv
+│   ├── service_list.csv
+│   ├── netstat.txt
+│   ├── net_tcp.csv
+│   ├── net_udp.csv
+│   ├── local_users.csv
+│   ├── security_log_recent.csv
+│   ├── registry_run.txt
+│   └── scheduled_tasks_raw.csv
 │
-└── IncidentResponse\_Output\_YYYYMMDD\_HHMMSS/ # 분석 결과
-├── analysis.log
-├── process\_findings.csv
-├── net\_findings.csv
-├── persistence\_findings.csv
-├── file\_hashes.csv
-├── ioc\_hits.csv
-├── event\_findings.csv
-└── summary.csv
+└── IncidentResponse_Output_YYYYMMDD_HHMMSS/
+    ├── analysis.log
+    ├── process_findings.csv
+    ├── net_findings.csv
+    ├── persistence_findings.csv
+    ├── file_hashes.csv
+    ├── ioc_hits.csv
+    ├── event_findings.csv
+    └── summary.csv
 
 ---
-
 ## 🚀 사용 방법
 
 1. **PowerShell을 관리자 권한**으로 실행합니다.  
